@@ -1,0 +1,11 @@
+{
+  "name": "cmacc-docs",
+  "version": "1.0.0",
+  "description": "Cmacc Docs",
+  "main": "run.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cmacc-compiler": "wilmveel/cmacc-compiler"
+  }
+}
