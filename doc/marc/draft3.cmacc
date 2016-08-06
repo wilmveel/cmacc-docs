@@ -1,0 +1,7 @@
+$ party2 = [./WillemVeelenturf.cmacc]
+
+$ content = [./draft1.cmacc] => {
+	"party2" : party2
+}
+
+{{content}}

@@ -1,0 +1,32 @@
+$ party1 = [./MarcDangeard.cmacc]
+
+$ party2 = [./WillemVeelenturf.cmacc]
+
+$ content = [./draft3.cmacc] => {
+	"misc" : misc,
+	"party2" : party2
+}
+
+$ intro = [./intro.cmacc]
+
+$ who = [./who.cmacc] => {
+	"party1" : party1,
+	"party2" : party2
+}
+
+$ misc = [./general_clauses.cmacc]
+
+$ closing = [./closing.cmacc] => {
+	"party1" : party1,
+	"party2" : party2
+}
+
+{{intro}}
+
+1. {{who}}
+
+2. {{misc.clause3}}
+
+3. {{misc.clause5}}
+
+{{closing}}

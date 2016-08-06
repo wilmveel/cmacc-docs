@@ -1,0 +1,31 @@
+$ party1 = [./MarcDangeard.cmacc]
+
+$ party2 = [./JamesHazard.cmacc]
+
+$ intro = [./intro.cmacc]
+
+$ who = [./who.cmacc] => {
+	"party1" : party1,
+	"party2" : party2
+}
+
+$ what = [./what.cmacc]
+
+$ general = [./general_clauses.cmacc]
+
+$ misc = general.clause1
+
+$ closing = [./closing.cmacc] => {
+	"party1" : party1,
+	"party2" : party2
+}
+
+{{intro}}
+
+1. {{who}}
+
+2. {{what}}
+
+3. {{general.clause1}}
+
+{{closing}}

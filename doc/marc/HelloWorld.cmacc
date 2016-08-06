@@ -1,0 +1,5 @@
+//this is a contract template calling for one party
+
+$ person = [./Person.cmacc]
+    
+My name is {{person.name}} and I live in {{person.city}}

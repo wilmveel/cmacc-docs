@@ -11,19 +11,34 @@ var file = path.join(__dirname, input);
 
 cmacc.compose(file, null, function (err, ast) {
 
-    fs.writeFileSync('run.json', JSON.stringify(ast, null, 4))
+    if (err)
+        return console.error(err);
 
     cmacc.render(ast, function (err, markdown) {
 
-        var html = cmacc.marked(markdown)
+        if (err)
+            return console.error(err);
 
-        console.log("---MARKDOWN---\n");
-        console.log(markdown + "\n");
+        cmacc.serialize(ast, function (err, source) {
 
-        console.log("---HTML---\n");
-        console.log(html);
+            if (err)
+                return console.error(err);
 
-        fs.writeFileSync('run.md', markdown)
-        fs.writeFileSync('run.html', html)
+            var html = cmacc.marked(markdown)
+
+            console.log("---MARKDOWN---\n");
+            console.log(markdown + "\n");
+
+            console.log("---HTML---\n");
+            console.log(html);
+
+            console.log("---SOURCE---\n");
+            console.log(source);
+
+            fs.writeFileSync('run.json', JSON.stringify(ast, null, 4))
+            fs.writeFileSync('run.md', markdown)
+            fs.writeFileSync('run.html', html)
+            fs.writeFileSync('run.source', source)
+        });
     });
 });

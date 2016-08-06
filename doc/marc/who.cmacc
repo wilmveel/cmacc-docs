@@ -1,0 +1,5 @@
+$ party1 = [./person.cmacc]
+
+$ party2 = [./person.cmacc]
+
+This agreement is between {{party1.name}} and {{party2.name}}.
