@@ -1,13 +1,13 @@
-$ party1 = [./person.md]
+$ party1 = [./person.cmacc]
 
-$ party2 = [./person.md]
+$ party2 = [./person.cmacc]
 
-$ signParty1 = [./sign.md] => {
+$ signParty1 = [./sign.cmacc] => {
     "role": "Party1",
     "person": party1
 }
 
-$ signParty2 = [./sign.md] => {
+$ signParty2 = [./sign.cmacc] => {
     "role": "Party2",
     "person": party2
 }

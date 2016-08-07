@@ -1,8 +1,8 @@
-$ party1 = [./MarcDangeard.md]
+$ party1 = [./MarcDangeard.cmacc]
 
-$ party2 = [./WillemVeelenturf.md]
+$ party2 = [./WillemVeelenturf.cmacc]
 
-$ content = [./draft1.md] => {
+$ content = [./draft1.cmacc] => {
 	"intro" : intro,
 	"who" : who,
 	"what" : what,
@@ -10,18 +10,18 @@ $ content = [./draft1.md] => {
 	"closing" : closing
 }
 
-$ intro = [./intro.md]
+$ intro = [./intro.cmacc]
 
-$ who = [./who.md] => {
+$ who = [./who.cmacc] => {
 	"party1" : party1,
 	"party2" : party2
 }
 
-$ what = [./what.md]
+$ what = [./what.cmacc]
 
-$ misc = [./general_clauses.md]
+$ misc = [./general_clauses.cmacc]
 
-$ closing = [./closing.md] => {
+$ closing = [./closing.cmacc] => {
 	"party1" : party1,
 	"party2" : party2
 }
