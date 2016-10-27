@@ -1,19 +1,19 @@
-$ test1 = "ld"
+$ test1 = "ld1"
 
 $ test2 = {
-    "test" : "Wor"
-}
+	"test" : "Wor"
+};
 
 $ test3 = [./Object.cmacc]
 
 $ obj = {
-    "hel" : test2.test,
-    "lo" : test1
-}
+	"hel" : test2.test,
+	"lo" : test1
+};
 
 $ test4 = [./Object.cmacc] => {
-    "obj": obj
-}
+	"obj" : obj
+};
 
 1 - Hello Wor{{test1}}
 

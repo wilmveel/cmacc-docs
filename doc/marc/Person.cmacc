@@ -1,3 +1,5 @@
 $ name = "name"
 
 $ city = "city"
+
+Test {{city}}  123

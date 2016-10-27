@@ -1,3 +1,5 @@
 $ name = "name"
 
-$ county = [./_County.cmacc]
+$ county = [./_County.cmacc] => {
+}
+
